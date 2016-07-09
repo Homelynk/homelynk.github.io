@@ -63,6 +63,13 @@
 	.hero {
 		display: none;
 	}
+		#aboutus .pillars {
+		padding-bottom: 25px !important;
+	}
+	#aboutus p {
+		padding-left: 0px !important;
+		margin-bottom: 0px !important;
+	}
 }
 /* small - tablets */
 @media (max-width: 768px) {
@@ -70,10 +77,19 @@
 	div[class~="sm"] {
 		width: 100% !important;
 	}
+	#footer a {
+		display: block !important;
+		padding: 0px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	.moonbeam-link {
+		float: none !important;
+	}
 
 }
 /* extra small - phones */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 	div[class~="xs"] {
 		width: 100% !important;
 	}
@@ -86,7 +102,6 @@
 		float: none !important;
 		text-align: center;
 	}
-
 }
 
 /* Tags */
@@ -381,6 +396,7 @@ h2.section {
 	}
 	#footer .moonbeam-link {
 		float: right;
+		padding-right: 15px;
 	}
 	#footer .moonbeam-logo {
 		max-height: 40px;
