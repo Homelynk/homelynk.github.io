@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Loading custom fonts -->
+    <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+              <title>HomeLynk: Landing Page</title>
+          <meta content="HomeLynk: Landing Page" property="og:title">
+          
+          
+          <meta content="HomeLynk: Landing Page" name="description">
+          
+          <meta content="website" property="og:type">
+          <link rel='icon' type='image/vnd.microsoft.icon' href='//d1y0v6ricksqp.cloudfront.net/images/icons/public_sites_favicon.ico'>
+                                <style>
+            img {
+              max-width: 100%;
+            }
+            img.fr-fin{
+              margin: auto;
+              padding: 10px 0;
+              display: block;
+            }
+            img.fr-dib {
+              margin: auto;
+              display: block;
+              float: none;
+              vertical-align: top;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            img.fr-dib.fr-fil {
+              margin: 5px auto 5px 0;
+              left: 5px;
+            }
+            img.fr-fir{
+              float:right;
+              margin: 10px 3px 10px 10px;
+            }
+            img.fr-dib.fr-fir {
+              margin: 5px 0 5px auto;
+              right: 5px;
+            }
+            img.fr-dii {
+              margin: auto;
+              display: inline-block;
+              float: none;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+            img.fr-dii.fr-fil {
+              margin: 5px 10px 5px 0;
+              left: 5px;
+              float: left;
+            }
+            img.fr-dii.fr-fir {
+              margin: 5px 0 5px 10px;
+              right: 5px;
+              float: right;
+            }
+          </style>
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Bootstrap core CSS -->
+    <link href="//d1y0v6ricksqp.cloudfront.net/css/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//d1y0v6ricksqp.cloudfront.net/css/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kickoffpages-kickofflabs.netdna-ssl.com/pages/1.9.1/kol_default_response.js"></script>
+  <script src="https://kickoffpages-kickofflabs.netdna-ssl.com/pages/1.9.1/kol_external_2.js"></script>
+  <script>
+    jQuery(document).ready(function(){
+      new KOLValidation();
+      new KOLResponse();
+    });
+  </script>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0px;
+      font-family: 'Lato' , Helvetica, Arial, sans-serif; font-weight: normal;
+    }
+
+    html,
+    body {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    body {
+      background: #fff
+      margin: 0;
+      color: #5a5a5a
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 300;
+      font-family: 'Lato' , Helvetica, Arial, sans-serif; font-weight: normal;
+    }
+
+    p {
+      padding: 0;
+      margin-bottom: .8rem;
+      font-weight: 300;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: #5a5a5a
+      margin-top: .625rem;
+      font-family: 'Lato' , Helvetica, Arial, sans-serif; font-weight: normal;
+    }
+
+    .alignleft { float: left; }
+    .alignright { float: right; }
+    .aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      clear: both;
+    }
+    .centered {text-align: center}
+    .mt {margin-top: 3.125rem;}
+    .mb {margin-bottom: 3.125rem;}
+    .mtb {margin-top: 3.125rem; margin-bottom: 3.125rem;}
+    .mtb2 { margin-top: 6.25rem; margin-bottom: 6.25rem;}
+    .ptb {padding-top: 5rem; padding-bottom: 5rem;}
+
+    .clear {
+      clear: both;
+      display: block;
+      font-size: 0;
+      height: 0;
+      line-height: 0;
+      width:100%;
+    }
+    ::-moz-selection  {
+      color: #fff;
+      text-shadow:none;
+      background: #5a5a5a
+    }
+    ::selection {
+      color: #fff;
+      text-shadow:none;
+      background:#5a5a5a
+    }
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      -webkit-transition: background-color .4s linear, color .4s linear;
+      -moz-transition: background-color .4s linear, color .4s linear;
+      -o-transition: background-color .4s linear, color .4s linear;
+      -ms-transition: background-color .4s linear, color .4s linear;
+      transition: background-color .4s linear, color .4s linear;
+      color: #1abc9c
+    }
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      color: #1abc9c
+    }
+
+    .nopadding {
+      padding: 0px !important;
+      margin: 0px;
+    }
+
+    hr {
+      border: 1px solid #5a5a5a
+      width: 7.5rem;
+    }
+
+
+    /* HEADER SECTION */
+    #h {
+      position: relative;
+      padding-top: 11.5625rem;
+      background: url('//d1y0v6ricksqp.cloudfront.net/images/backgrounds/pictures/earth_lights.jpg') no-repeat center top;
+      text-align:center;
+      background-attachment: relative;
+      background-position: center center;
+      min-height: 43.75rem;
+      width: 100%;
+
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #h .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 1.125rem;
+      
+      opacity: 0.1;
+      
+      background-color: #12c3f6;
+    }
+
+    #h hr {
+      border: 2px solid white;
+      width: 7.5rem;
+    }
+
+    #h h1 {
+      font-weight: 900;
+      font-size: 3.75rem;
+      color: white;
+    }
+
+    #h h2 {
+      color: white;
+    }
+
+    .go {
+      height: 3.75rem;
+      width: 3.75rem;
+      display: block;
+      transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      padding-top: 10.625rem;
+      padding-bottom: .9375rem;
+    }
+
+    .go:hover, .go:focus {
+      transform: translate(0, -.9375rem);
+      -webkit-transform: translate(0, -.9375rem);
+      -o-transform: translate(0, -.9375rem);
+      -moz-transform: translate(0, -.9375rem);
+    }
+
+    .go i {
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    /* Grey Section */
+    .glyphicon {
+      color: white;
+      font-size: 2.5rem;
+      line-height: 7.5rem;
+    }
+    #g-benefit, #g-download{
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+    }
+    #g-benefit {
+      background: #f2f2f2
+    }
+    #g-download {
+      background: #f2f2f2
+    }
+
+    g-download h1 {
+      margin-bottom: 1rem;
+    }
+
+    /*.circle-icon {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: 
+      position: relative;
+    }*/
+
+    .circle-icon .icon {
+      color: #fff;
+      line-height: 7.5rem;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 3.125rem;
+    }
+
+    .icon-sm {
+      font-size: 1.25rem;
+    }
+
+    .btn-apple {
+      border-radius: 30px;
+      padding: 1rem 2rem 1.25rem;
+      color: white;
+      margin: .625rem;
+      background: #D2527F
+    }
+    .btn-apple:hover {
+      color: white;
+      background: #D2527F
+    }
+    /* Shadow */
+    .btn-apple, .btn-android {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: box-shadow;
+      transition-property: box-shadow;
+    }
+    .btn-apple:hover, .btn-apple:focus, .btn-apple:active, .btn-android:hover, .btn-android:focus, .btn-android:active {
+      box-shadow: 0 .625rem .625rem -.625rem rgba(0, 0, 0, 0.5);
+    }
+
+    .btn-android {
+      border-radius: 30px;
+      padding: 1rem 2rem 1.25rem;
+      color: white;
+      margin: .625rem;
+      background: #52B3D9
+    }
+    .btn-android:hover {
+      color: white;
+      background: #52B3D9
+    }
+
+
+    /* features */
+    .f-r {
+      text-align: right;
+      margin: .9375rem;
+    }
+
+    .f-l {
+      text-align: left;
+      margin: .9375rem;
+    }
+
+    .features {
+      padding: .625rem;
+    }
+
+    /*.features:hover {
+      background: 
+      cursor: pointer;
+    }*/
+
+    .features p {
+      font-size: 1rem;
+      color: #a0a0a0
+      line-height: 1.625rem;
+    }
+
+    .features h3 {
+      color: #12c3f6
+    }
+
+    /* Showcase Conf */
+    #showcase {
+      padding-bottom: 3.125rem;
+      padding-top: 3.125rem;
+      color: white;
+      background: #11f7ae
+    }
+
+    #showcase hr {
+      border: 1px solid #fff;
+      width: 7.5rem;
+    }
+
+    /* Testimonial Section */
+    #t {
+      background: url('http://d1y0v6ricksqp.cloudfront.net/images/placeholders/testimonials.jpg') no-repeat center top;
+      padding-top: 6.25rem;
+      padding-bottom: 3.125rem;
+      text-align:center;
+      background-attachment: relative;
+      background-position: center center;
+      min-height: 37.5rem;
+      width: 100%;
+      color: white;
+
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: 100%;
+
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #t p {
+      color: white;
+    }
+
+    #t hr {
+      border-color: white;
+      width: 50%;
+    }
+
+    #t .testimonial {
+      margin-bottom: 8rem;
+    }
+
+    /* FOOTER */
+    #social {
+      margin-top: .5rem;
+    }
+
+    .social .fa {
+      margin: 0 .4375rem .625rem .4375rem;
+      font-size: 1.25rem;
+    }
+
+    .footer-l {
+      text-align: left;
+    }
+
+    .footer-r {
+      text-align: right;
+    }
+    .privacy-copyright {
+      padding-top: 1.25rem;
+    }
+
+    #f {
+      padding-bottom: 3.125rem;
+      padding-top: 4.6875rem;
+    }
+    #modal-body-customization {
+      text-align: left;
+    }
+    .style-select {
+      padding: 0 .25rem;
+    }
+    .checkbox {
+      margin-top: 0;
+    }
+
+    #f input, #f textarea {
+      font-size: 1.125rem;
+      min-height: 3.75rem;
+      border-radius: 40px;
+      line-height: 1.5rem;
+      padding: 1rem 1.875rem 1.25rem;
+      border: none;
+      margin-bottom: .625rem;
+      background-color: #e9f0f2;
+      -webkit-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+    }
+    #modal-body-customization #signup_form input, #modal-body-customization #signup_form textarea, #modal-body-customization #signup_form button.btn-submit {
+      line-height: 1.375rem;
+      min-height: 2.5rem;
+      padding: .5rem 1.875rem .625rem .625rem;
+      font-size: .9375rem;
+      border-radius: 5px;
+    }
+    #signup_form button.btn-submit {
+      border-radius:40px;
+    }
+    #modal-body-customization #signup_form button.btn-submit {
+      padding: .5rem 1.5rem;
+    }
+    #f select.multiple {
+      float: left;
+      width: 95%;
+      border-radius: 40px;
+      height: 4rem;
+      background: #e9f0f2;
+      border:none;
+    }
+    #f .subscribe-input {
+      width: 100%;
+      text-align: center;
+    }
+    #f .multiple {
+      margin-bottom:1.5rem;
+    }
+    #f label {
+      padding-left: 1rem;
+      text-transform: capitalize;
+    }
+    #f div.checkbox label {
+      padding-left: .5rem;
+    }
+    #f div.checkbox {
+      margin-left: 1rem;
+    }
+    #f .subscribe-submit {
+      width: 100%;
+      text-align: center;
+    }
+    #f .multiple-submit {
+      position: center;
+    }
+    #kol_thank_you{
+      display: none;
+      background-color: white;
+      -webkit-box-shadow: 0px 1px 8px -1px #333;
+      box-shadow: 0px 1px 8px -1px #333;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      padding: 1.25rem;
+      -webkit-transition: opacity linear .2s;
+      -moz-transition: opacity linear .2s;
+      -o-transition: opacity linear .2s;
+      transition: opacity linear .2s;
+      z-index: 9999 !important;
+      position: relative;
+    }
+    #modal-body-customization #kol_thank_you {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    .modal-dialog {
+      margin-top: 6.25rem;
+    }
+    /* Button used in the footer - contact form */
+    .btn-submit {
+      color: #fff;
+      font-size: 1.125rem;
+      min-height: 3.75rem;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1.5rem;
+      padding: 1rem 1.875rem 1.25rem;
+      z-index: 1;
+      position: relative;
+      border: none;
+      background: #1abc9c
+    }
+
+    @media screen and (max-width: 768px){
+      .footer-r, .footer-l {
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 990px){
+      .f-r {
+      text-align: center;
+      }
+
+      .f-l {
+        text-align: center;
+      }
+    }
+  </style>
+  
+
+  </head>
+
+  <body>
+  <!-- ********** HEADER ********** -->
+  <section id="home"></section>
+  <div id="h">
+    
+      <div class="image-overlay"></div>
+    
+    <div class="container">
+      <div class="row centered">
+        <div class="col-md-8 col-md-offset-2">
+          <div data-mercury="froala" data-content-name="hero_title_text">
+            <h1><img class="fr-dib" src="https://d7zgbk06ve7c.cloudfront.net/assets/74424/7fcuzhsskqdd1l6iokn6/logo-w.png" style="width: 633px;"></h1><hr class="aligncenter"><h2>Your leads. Don't pay for them.</h2>
+          </div>
+        </div> <!-- /col-md-8 -->
+      </div> <!-- /row centered -->
+    </div> <!--/container -->
+
+    <!-- ********** SUBSCRIBE ********** -->
+    <div id="f">
+      <div class="container">
+        
+          <!-- Launch Signup Modal -->
+          <div class="row centered">
+            <button class='btn btn-submit multiple-submit' id="subscribe_modal" data-toggle="modal" data-target="#subscribeModal" name="subscribe_modal" type="button">Sign Up</button>
+          </div> <!-- /row -->
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribe_modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <div data-mercury="froala" data-content-name="modal_header_text"><p><img class="fr-dib fr-img-move" src="https://d7zgbk06ve7c.cloudfront.net/assets/74424/24kxyamumb9orteybyn1/HomeLynkLogoCropped.png" style="width: 124px;"></p></div>
+              </div>
+
+              <!-- *********** Form  ********* -->
+              <div class="modal-body" id="modal-body-customization">
+                        <form data-page-id="108817" accept-charset="UTF-8" class="signup_form" data-remote="true" id="signup_form" method="post">
+          
+
+                
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <!-- Labels -->
+                    <label class="control-label" for="email">
+                      
+                        Email
+                      
+                    </label>
+
+                    <!-- Input / Checkbox / Select Dropdown -->
+                    
+                      <input class="subscribe-input multiple required" id="email" name="email" placeholder="Type your email here" type="email" data-label-text = "Email" />
+
+                      <!-- Text Field -->
+                      
+                  </div> <!-- /col-sm-10 col-sm-offset-1 -->
+                </div> <!-- /row -->
+
+                
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <!-- Labels -->
+                    <label class="control-label" for="name">
+                      
+                        Name
+                      
+                    </label>
+
+                    <!-- Input / Checkbox / Select Dropdown -->
+                    
+                      <input class="subscribe-input multiple required" id="name" name="name" placeholder="First and last name" type="text" data-label-text="Name" />
+
+                      <!-- Text Area -->
+                      
+                  </div> <!-- /col-sm-10 col-sm-offset-1 -->
+                </div> <!-- /row -->
+
+                
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <!-- Labels -->
+                    <label class="control-label" for="brokerage">
+                      
+                        Brokerage
+                      
+                    </label>
+
+                    <!-- Input / Checkbox / Select Dropdown -->
+                    
+                      <input class="subscribe-input multiple required" id="brokerage" name="brokerage" placeholder="Type your brokerage here" type="text" data-label-text="Brokerage" />
+
+                      <!-- Text Area -->
+                      
+                  </div> <!-- /col-sm-10 col-sm-offset-1 -->
+                </div> <!-- /row -->
+
+                
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <!-- Labels -->
+                    <label class="control-label" for="years_experience">
+                      
+                        Years Experience
+                      
+                    </label>
+
+                    <!-- Input / Checkbox / Select Dropdown -->
+                    
+                      <input class="subscribe-input multiple required" id="years_experience" name="years_experience" placeholder="How many years have you been in the industry?" type="text" data-label-text="Years Experience" />
+
+                      <!-- Text Area -->
+                      
+                  </div> <!-- /col-sm-10 col-sm-offset-1 -->
+                </div> <!-- /row -->
+
+                
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <!-- Labels -->
+                    <label class="control-label" for="transactions_per_year">
+                      
+                        Transactions per Year
+                      
+                    </label>
+
+                    <!-- Input / Checkbox / Select Dropdown -->
+                    
+                      <input class="subscribe-input multiple required" id="transactions_per_year" name="transactions_per_year" placeholder="On average, how many transactions do you close per year?" type="text" data-label-text="Transactions per Year" />
+
+                      <!-- Text Area -->
+                      
+                  </div> <!-- /col-sm-10 col-sm-offset-1 -->
+                </div> <!-- /row -->
+
+                
+
+                <!-- Submit Button -->
+                <div class="row centered">
+                  <button class='btn btn-submit multiple-submit' id="submit_button" name="submit" type="submit">Sign Up</button>
+                </div> <!-- /row -->
+              
+            <div style="margin:0;padding:0;display:inline">
+              <input type="hidden" id="__page_id" name="__page_id" value="108817">
+              <input type="hidden" id="__version" name="__version" value="1111472">
+              <input type="hidden" id="__xuid" name="__xuid" value="74424">
+              <input type="hidden" id="__kol_api_url" name="__kol_api_url" value="https://api.kickofflabs.com/v1/77146/subscribe">
+            </div>
+          </form>
+
+
+                <!-- Form Response -->
+                <div class="row centered">
+                            <div class="thanks" id="kol_thank_you"></div>
+          <script type="kol/template" id="__response">
+          
+                  <div id="subscribe">
+                    {% common_thankyou_share_with_customized_links %}
+                  </div>
+                  
+          </script>
+
+                </div> <!-- /row -->
+
+              </div> <!-- /modal-body -->
+            </div> <!-- /modal-content -->
+          </div> <!-- /modal-dialog -->
+        </div> <!-- /modal -->
+
+
+
+
+      </div> <!-- /container -->
+    </div> <!-- /#f -->
+  </div><!--/H -->
+
+  <!-- ********** ICONS ********** -->
+  <section id="about"></section>
+  <div id="g-benefit">
+    <div class="container">
+      <div class="row mtb centered">
+
+        <!-- Benefit 1 -->
+        <div class="col-md-3">
+          <div data-mercury="froala" data-content-name="benefit_one"><p>&nbsp;</p></div>
+        </div><!--/col-md-3 -->
+
+        <!-- Benefit 2 -->
+        <div class="col-md-3">
+          <div data-mercury="froala" data-content-name="benefit_two"><h3>Leads on tap</h3><p>Downtime? No longer. Access a pool of leads looking for trusted professionals like you.</p></div>
+        </div><!--/col-md-3 -->
+
+        <!-- Benefit 3 -->
+        <div class="col-md-3">
+          <div data-mercury="froala" data-content-name="benefit_three"><h3>Millennial Exposure</h3><p>Created by millennials for the next generation of home buyers and sellers; &nbsp;gain loyal and lifelong clients.&nbsp;</p></div>
+        </div><!--/col-md-3 -->
+
+        <!-- Benefit 4 -->
+        <div class="col-md-3">
+          <div data-mercury="froala" data-content-name="benefit_four"><p>&nbsp;</p></div>
+        </div><!--/col-md-3 -->
+
+      </div><!--/row -->
+    </div><!--/container -->
+  </div><!--/G -->
+
+  <!-- ********** PHONE & FEATURES ********** -->
+  
+
+  <!-- ********** SHOWCASE ********** -->
+  
+
+
+  <!-- ********** TESTIMONIALS ********** -->
+  
+
+  <!-- ********** DOWNLOAD APP ********** -->
+  
+
+
+  <!-- *********** PRIVACY *************** -->
+  <div class="privacy-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 footer-l">
+          
+            <p>Copyright HomeLynk 2016</p>
+          
+        </div>
+        <div class="col-sm-6 text-center">
+          <!-- **************  SOCIAL MEDIA  ***************** -->
+          
+
+        <div class="col-sm-3 footer-r">
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="//d1y0v6ricksqp.cloudfront.net/js/jquery-libs/fitvid/1.1/jquery.fitvids.js"></script>
+  <script>
+    $(document).ready(function() {
+      if (typeof kolInsertFroalaImage === 'undefined') {
+       $(".container, .container-fluid").fitVids();
+      }
+      $(".container, .flex-container").fitVids();
+    });
+  </script>
+          <script>
+        $(document).ready(function(){
+          analytic_options = {
+            stats_url: "//api.kickofflabs.com", 
+            list_id: 77146, 
+            source: "page.108817", 
+            debug: false, 
+            custom: {page_theme: 'app_feature_focused'}, 
+            click_selector: "a.social_share_link"
+          };
+          
+          window.__kol_analytics = new KOLAnalytics(analytic_options)
+          window.__kol_analytics.track_view()
+          
+          
+        });      
+        </script>
+      
+      
+      
+
+            <script> 
+              function getParameterByName(name){
+                        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                        var regexS = "[\\?&]" + name + "=([^&#]*)";
+                        var regex = new RegExp(regexS);
+                        var results = regex.exec(window.location.search);
+                        if(results == null)
+                          return "";
+                        else
+                          return decodeURIComponent(results[1].replace(/\+/g, " "));
+                      }
+
+                    $(document).ready(function(){
+                        var email = getParameterByName('_email');
+                        if (email != ""){
+                            $('#email').val(email);
+                            if ($('.required').length < 2)
+                              {$('#signup_form').submit();}
+                        }
+                      });
+              
+             </script>
+
+
+
+
+
+
+
+
+
+
+<script>window.jQuery || document.write('<scr' + 'ipt src="https://code.jquery.com/jquery-1.11.0.min.js"><\/sc' + 'ript>')</script>
+<script>window.$kol_jquery = window.jQuery</script>
+<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/widgets/1.9.1/kol_bounce.js"></script>
+<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/74424/108816.js'></script>
+        <script>
+        $(function(){   
+          var share_options = {"networks":[{"network":"facebook","icon":"facebook"},{"network":"twitter","icon":"twitter"},{"network":"email","icon":"envelope"}],"share_text":"Check this out!","body":"This is great!\n\nPlease sign up with the following link: \n\n","subject":"Check this out!"}; 
+          var share_links = new KOLShareLinks(share_options);
+          window.__kol_share_links = share_links;
+        });
+        </script>
+
+
+  </body>
+</html>
